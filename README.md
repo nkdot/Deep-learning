@@ -35,7 +35,9 @@ Strides in discriminator|L1,2&3-Strides=(2,2)& (1,1) in L4&5|Strides=(2,2)in all
 ![]( https://github.com/nkdot/Deep-learning/blob/main/images/summer_to_winter.png "Summer to Winter")
 ***
 ## Results:
-Modified U net gave better results for apple to orange translation. Model2 with RESNET architecture was comparatively better in translating horse to zebra. For summer to winter translation, Model 3 with RESNET architecture gave promising results.
++ Modified U net gave better results for apple to orange translation.
++ Model2 with RESNET architecture was comparatively better in translating horse to zebra. 
++ For summer to winter translation, Model 3 with RESNET architecture gave promising results.
 
 ##  	Conclusion:
 Overall, the results produced by the above models with 40 epochs were very promising and performed better than the cycleGAN model available in tensorflow hub. This is impressive, because paired translations using pix2pix are a kind of fully supervised learning while cycleGAN is not. Main observation was that the model that works well for translating apple to orange may fail on season transfer. Hence some parameters were tweaked to get better results for season transfer. 
