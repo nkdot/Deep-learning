@@ -37,6 +37,11 @@ Strides in discriminator|L1,2&3-Strides=(2,2)& (1,1) in L4&5|Strides=(2,2)in all
 ## Results:
 Modified U net gave better results for apple to orange translation. Model2 with RESNET architecture was comparatively better in translating horse to zebra. For summer to winter translation, Model 3 with RESNET architecture gave promising results.
 
+##  	Conclusion:
+Overall, the results produced by the above models with 40 epochs were very promising and performed better than the cycleGAN model available in tensorflow hub. This is impressive, because paired translations using pix2pix are a kind of fully supervised learning while cycleGAN is not. Main observation was that the model that works well for translating apple to orange may fail on season transfer. Hence some parameters were tweaked to get better results for season transfer. 
+ It should be noted that if cycleGAN is implemented for a practical application, proper care must be taken on its limitations. It works well on tasks that involve color or texture changes, like season transfer or photo to painting tasks like style transfer, but for tasks that require substantial geometric changes to the image usually fail. 
+
+
 ## Bibliography:
 + Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks, https://arxiv.org/abs/1703.10593
 + https://towardsdatascience.com/image-to-image-translation-69c10c18f6ff#:~:text=Image%2Dto%2Dimage%20translation%20is%20a%20class%20of%20vision%20and,season%20transfer%20and%20photo%20enhancement.
